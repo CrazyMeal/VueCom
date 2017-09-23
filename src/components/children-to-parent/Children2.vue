@@ -18,6 +18,7 @@ export default {
   methods: {
     sendToParent: function () {
       this.$emit('sendingToParentEvent', this.message)
+      this.message = ''
     }
   },
   components: {
